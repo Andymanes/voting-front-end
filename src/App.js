@@ -1,7 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+
 
 function App() {
+  constructor(props) {
+    super(props);
+    this.state = { apiResponse: "" };
+}
+
+callAPI() {
+    fetch("http://localhost:4000/test")
+        .then(res => res.text())
+        .then(res => this.setState({ apiResponse: res }));
+}
+
+componentWillMount() {
+    this.callAPI();
+}
+
   return (
     <div className="App">
       <header className="App-header">
