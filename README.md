@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# Who's my Rep?
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+The purpose of this application is to allow easy access for individuals to discover who their congressional representatives are, how they can contact them, and to show if and how those representatives voted on each bill while they have been in office. 
 
-In the project directory, you can run:
+## Wire Frames
 
-### `npm start`
+![Basic Wire Frame](https://user-images.githubusercontent.com/101294232/172185761-b470a4f6-b9a7-49c4-aa3a-b39b33e2de25.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![ERD Wire Frame](https://user-images.githubusercontent.com/101294232/172187820-11aee190-599c-401f-9a1f-17e95c60d5f0.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## How to install
+To run the app from your local machine you will need to ensure react, express, and node are all installed into your version of the project as well as have your own api key from propublica.org and substitute it into the code base
+- react docs: https://reactjs.org/docs/getting-started.html
+- express/node.js docs: https://expressjs.com/
+- request an api key from propublica: https://www.propublica.org/datastore/api/propublica-congress-api
 
-### `npm test`
+## How to use
+Once the app is running on browser, you can search for representatives by name if you already know their name or by address if you are unsure who you're representative is. After navigating to the representative's personal webpage, you can see all recent bills that have passed through the congressional floor as well as search for specific bills to see if and how that representative voted on said bill. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies used
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Javascript
+- HTML
+- CSS
+- Express
+- Node.JS
+- Express
