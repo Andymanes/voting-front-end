@@ -26,4 +26,4 @@ Once the app is running on browser, you can search for representatives by name i
 - CSS
 - Express
 - Node.JS
-- Express
+- React
