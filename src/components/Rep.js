@@ -28,7 +28,7 @@ function Rep (props) {
 
     return (
         <>
-            <div>{JSON.stringify(rep)}</div>
+            <div>{JSON.stringify(rep.results[0].first_name)}</div>
         </>
     )
 }

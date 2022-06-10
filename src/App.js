@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react'
 import House from './components/House'
 import Senate from './components/Senate'
 import Congress from './components/Congress'
-import Rep from './components/Reps';
+import Rep from './components/Rep';
 
 function App() {
  
