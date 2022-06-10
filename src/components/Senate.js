@@ -15,13 +15,23 @@ function Senate() {
             
         })
     },[])
-    console.log(senate)
+    console.log('Senate', senate)
     if (!senate) return <p>loading...</p>
     
-    return (<div>
-        <p>hey</p>
-        <div>{senate[0].id}</div>
-    </div>)
+    return (
+        <>
+
+            <p>hey</p>
+            <div className="senateList">
+                {senate ? senate.map((senator, idx) => {
+                    return (
+                    <div key={idx}>
+                        <h3>{senator?.last_name}</h3>
+                    </div>
+                    )
+                    }) : <h2>thinking</h2>}
+            </div>
+    </>)
 }
 
 export default Senate
