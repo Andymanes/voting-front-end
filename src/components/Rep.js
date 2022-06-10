@@ -17,18 +17,18 @@ function Rep (props) {
         const data = await fetch(URL, options)
         const result = await data.json()
         console.log(result)
-        setRep(result)
+        setRep(result.results[0])
     }
     useEffect(() => {
         getApiData()
         
     },[])
-    console.log(rep)
-    console.log(id)
-
+    console.log('Rep:', rep)
+    
     return (
         <>
-            <div>{JSON.stringify(rep.results[0].first_name)}</div>
+            <div></div>
+            <div>{JSON.stringify(rep.first_name)}</div>
         </>
     )
 }
