@@ -18,7 +18,7 @@ function House() {
 
     return (
         <>
-            <p>house</p>
+            <h1>house</h1>
             <div className='houseList'>
                 {house ? house.map((houseRep, idx) => {
                     return (

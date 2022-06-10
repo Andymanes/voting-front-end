@@ -5,6 +5,8 @@ function Congress() {
         <>
             <div>
                 <Link to='/senate' >Senate</Link>
+            </div>
+            <div>
                 <Link to='/house' >House</Link>
             </div>
         </>

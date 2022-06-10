@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react'
 import House from './components/House'
 import Senate from './components/Senate'
 import Congress from './components/Congress'
-
+import Rep from './components/Reps';
 
 function App() {
  
@@ -15,7 +15,7 @@ function App() {
       <Route exact path='/' element={<Congress />} />
       <Route exact path='/senate' element={<Senate />} />
       <Route exact path='/house' element={<House />} />
-      <Route exact path='/rep/:id' />
+      <Route exact path='/rep/:id' element={<Rep />} />
     </Routes>
   );
 }

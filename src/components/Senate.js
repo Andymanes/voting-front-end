@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react"
+import { Link } from "react-router-dom"
 
 
 function Senate() {
@@ -21,12 +22,15 @@ function Senate() {
     return (
         <>
 
-            <p>hey</p>
+            <h1>Senate</h1>
             <div className="senateList">
                 {senate ? senate.map((senator, idx) => {
                     return (
                     <div key={idx}>
-                        <h3>{senator?.last_name}</h3>
+                        <h2>{senator?.state}</h2>
+                        <Link to={`/rep/${senator.id}`} >
+                            <h3>{senator?.last_name}</h3>
+                        </Link>
                     </div>
                     )
                     }) : <h2>thinking</h2>}
