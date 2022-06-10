@@ -1,15 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
-import React from 'react';
+import { Routes, Route } from 'react-router-dom'
+import React from 'react'
+import { useState, useEffect } from 'react'
+import House from './components/House'
+import Senate from './components/Senate'
 
 
 function App() {
  
 
   return (
-    <div className="App">
-      <h1>Checking connection</h1>
-    </div>
+    <Routes>
+      <Route exact path='/senate' element={<Senate />} />
+      <Route exact path='/house' element={<House />} />
+      <Route exact path='/rep/:id' />
+    </Routes>
   );
 }
 
