@@ -25,9 +25,12 @@ function Senate() {
             <h1>Senate</h1>
             <div className="senateList">
                 {senate ? senate.map((senator, idx) => {
+                    console.log()
                     return (
                     <div key={idx}>
-                        <h2>{senator?.state}</h2>
+                        <Link to={`/state/${senator?.state}`} >
+                            <div>{senator?.state}</div>
+                        </Link>
                         <Link to={`/rep/${senator.id}`} >
                             <h3>{senator?.last_name}</h3>
                         </Link>

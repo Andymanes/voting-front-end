@@ -18,6 +18,7 @@ function Rep (props) {
         const result = await data.json()
         console.log(result)
         setRep(result.results[0])
+        
     }
     useEffect(() => {
         getApiData()
@@ -29,6 +30,8 @@ function Rep (props) {
         <>
             <div></div>
             <div>{JSON.stringify(rep.first_name)}</div>
+            <div>{JSON.stringify(rep.last_name)}</div>
+            <div>{JSON.stringify(rep.current_party)}</div>
         </>
     )
 }

@@ -6,6 +6,7 @@ import House from './components/House'
 import Senate from './components/Senate'
 import Congress from './components/Congress'
 import Rep from './components/Rep';
+import State from './components/State';
 
 function App() {
  
@@ -16,6 +17,7 @@ function App() {
       <Route exact path='/senate' element={<Senate />} />
       <Route exact path='/house' element={<House />} />
       <Route exact path='/rep/:id' element={<Rep />} />
+      <Route exact path='/state/:id' element={<State />} />
     </Routes>
   );
 }
