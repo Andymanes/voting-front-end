@@ -3,17 +3,24 @@ import { Link } from "react-router-dom"
 
 function Header() {
     return (
-        <nav className="nav">
-            <Link to='/' >
-                <div>Home</div>
-            </Link>
-            <Link to='/senate' >
-                <div>Senate</div>
-            </Link>
-            <Link to='/house' >
-                <div>House of Reps</div>
-            </Link>
-        </nav>
+        <>
+            <div className="nav">
+                <div className='navbar'>
+                    <div className='navLink'>
+                        <Link to='/' style={{ textDecoration: 'none', color: 'white' }}>Home</Link>
+                    </div>
+                    <div className='navLink'>
+                        <Link to='/senate' style={{ textDecoration: 'none', color: 'white' }}>Senate</Link>
+                    </div>
+                    <div className='navLink'>
+                        <Link to='/house' style={{ textDecoration: 'none', color: 'white' }}>House</Link>
+                    </div>
+                    <div className='navLink'>
+                        <div>bills Link</div>
+                    </div>
+                </div>
+            </div>
+        </>
     )
 }
 

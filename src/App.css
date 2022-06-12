@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body{
+  background-image: url('https://prochoice.org/wp-content/uploads/congress-building-1.jpg') ;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.title{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 35px;
+}
+
+.navbar{
+display: flex;
+background-color: rgb(56, 56, 56);
+flex-direction: row;
+border: 5px solid rgb(165, 54, 54);
+width: 100vh;
+height: 10vh;
+justify-content: space-evenly;
+opacity: .8;
+margin-top: 15px;
+}
+
+.navLink{
   color: white;
+  text-decoration: none;
+  border: 3px solid black;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+/* .senatePage{
+  display: flex;
+} */
+
+.senateStateList{
+  display: flex;
+  background-color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  opacity: .7;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 60vh;
+  border: 3px solid black;
+  justify-content: space-around;
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.stateLink{
+  /* color: rgb(77, 16, 16);
+  text-decoration: none;
+  border: 3px solid black */
+  color: rgb(0, 0, 0);
+}
+
+.houseStateList{
+  display: flex;
+  background-color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  opacity: .7;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 60vh;
+  border: 3px solid black;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.repList{
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+  opacity: .7;
+  /* width: 20vh; */
+  height: 70vh;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  /* border: 3px solid black; */
+}
+
+.repLink{
+  /* border: 3px solid black; */
+  text-decoration: none;
+  color: black;
+}
+
+.repBio{
+  display: flex;
+  flex-direction: column;
 }

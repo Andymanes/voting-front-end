@@ -21,17 +21,15 @@ function House() {
     return (
         <>
             <Header></Header>
-            <h1>House</h1>
-            <div className='houseList'>
+            <h1 className='title'>House</h1>
+            <div className='houseStateList'>
                 {house ? house.map((houseRep, idx) => {
                     return (
                         <div key={idx}>
-                        <Link to={`/house/state/${houseRep?.state}`} >
-                            <h3>{houseRep?.state}</h3>
+                        <Link to={`/house/state/${houseRep?.state}`} className='stateLink' style={{ textDecoration: 'none', color: 'black' }}>
+                            <h3 className='stateLink'>{houseRep?.state}</h3>
                         </Link>
-                        {/* <Link to={`/rep/${houseRep.id}`} >
-                            <h3>{houseRep?.last_name}</h3>
-                        </Link> */}
+                        
                     </div>
                     )
                 }) : <h2>thinking</h2>}

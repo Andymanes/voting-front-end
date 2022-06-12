@@ -1,3 +1,4 @@
+import { toBePartiallyChecked } from "@testing-library/jest-dom/dist/matchers"
 import React, { useState, useEffect } from "react"
 import { Link, useParams } from "react-router-dom"
 import Header from '../components/Header'
@@ -28,16 +29,16 @@ function StateHouse() {
     return (
         <>
             <Header></Header>
-            <h1>House of Reps</h1>
-            <div className="senateList">
+            <h1 className="title">House of Reps</h1>
+            <div className="repList">
                 {state ? state.map((state, idx) => {
                     return (
-                    <div key={idx}>
+                    <div key={idx} >
                         {/* <Link to={`/senate/state/${state?.state}`} > */}
                             {/* <h3>{state?.name}</h3> */}
                         {/* </Link> */}
-                        <Link to={`/rep/${state.id}`} >
-                            <h3>{state?.name}</h3>
+                        <Link to={`/rep/${state.id}`}  style={{ textDecoration: 'none' }}>
+                            <h3 className='repLink'>{state?.name}</h3>
                         </Link>
                     </div>
                     )

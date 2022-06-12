@@ -29,15 +29,15 @@ function StateSenate() {
         <>
             <Header></Header>
             <h1>Senators</h1>
-            <div className="senateList">
+            <div className="repList">
                 {state ? state.map((state, idx) => {
                     return (
                     <div key={idx}>
                         {/* <Link to={`/senate/state/${state?.state}`} > */}
                             {/* <h3>{state?.name}</h3> */}
                         {/* </Link> */}
-                        <Link to={`/rep/${state.id}`} >
-                            <h3>{state?.name}</h3>
+                        <Link to={`/rep/${state.id}`} style={{ textDecoration: 'none' }}>
+                            <h3 className='repLink'>{state?.name}</h3>
                         </Link>
                     </div>
                     )

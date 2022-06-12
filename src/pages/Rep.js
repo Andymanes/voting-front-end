@@ -32,9 +32,18 @@ function Rep (props) {
     return (
         <>
             <Header></Header>
-            <div>{rep?.first_name} {rep.last_name}</div>
-            <div>state {repRole?.state}</div>
-            <div>Politial Party ({rep.current_party})</div>
+            <div className='repBio'>
+                <h1>{rep?.first_name} {rep.last_name}</h1>
+                <h2>Representative for {repRole?.state}</h2>
+                <h2>Residing in the {repRole?.chamber} since {repRole?.start_date}</h2>
+                <h3>Politial Party ({rep?.current_party})</h3>
+                <h3>Since been in office, has not participated in {repRole?.missed_votes_pct}% potential votes</h3>
+                <h3>Votes with party {repRole?.votes_with_party_pct}% of the time</h3>
+                <h2 className='contactInfo'>Contact info:
+                    <h5>Phone Number {repRole?.phone}</h5>
+                    <h5><a href='{repRole.contact_form}'>Give feedback</a></h5>
+                </h2>
+            </div>
         </>
     )
 }

@@ -23,20 +23,22 @@ function Senate() {
     return (
         <>
             <Header></Header>
-            <h1>Senate</h1>
-            <div className="senateList">
-                {senate ? senate.map((senator, idx) => {
-                    return (
-                    <div key={idx}>
-                        <Link to={`/senate/state/${senator?.state}`} >
-                            <h3>{senator?.state}</h3>
-                        </Link>
-                        {/* <Link to={`/rep/${senator.id}`} >
-                            <h3>{senator?.last_name}</h3>
-                        </Link> */}
-                    </div>
-                    )
-                    }) : <h2>thinking</h2>}
+            <h1 className="title">Senate</h1>
+            <div className="senatePage">
+                <div className="senateStateList">
+                    {senate ? senate.map((senator, idx) => {
+                        return (
+                        <div key={idx}>
+                            <Link to={`/senate/state/${senator?.state}`}  style={{ textDecoration: 'none', color: 'black' }} >
+                                <h3 className='stateLink'>{senator?.state}</h3>
+                            </Link>
+                            {/* <Link to={`/rep/${senator.id}`} >
+                                <h3>{senator?.last_name}</h3>
+                            </Link> */}
+                        </div>
+                        )
+                        }) : <h2>thinking</h2>}
+                </div>
             </div>
     </>)
 }
