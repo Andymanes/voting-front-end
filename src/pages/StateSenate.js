@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react"
 import { Link, useParams } from "react-router-dom"
+import Header from '../components/Header'
 
 
-function State() {
+function StateSenate() {
     let { id } = useParams()
     let [state, setState] = useState()
 
@@ -26,10 +27,25 @@ function State() {
 
     return (
         <>
-            <div>Hello world</div>
+            <Header></Header>
+            <h1>Senators</h1>
+            <div className="senateList">
+                {state ? state.map((state, idx) => {
+                    return (
+                    <div key={idx}>
+                        {/* <Link to={`/senate/state/${state?.state}`} > */}
+                            {/* <h3>{state?.name}</h3> */}
+                        {/* </Link> */}
+                        <Link to={`/rep/${state.id}`} >
+                            <h3>{state?.name}</h3>
+                        </Link>
+                    </div>
+                    )
+                    }) : <h2>thinking</h2>}
+            </div>
         </>
     )
 
 }
 
-export default State
+export default StateSenate

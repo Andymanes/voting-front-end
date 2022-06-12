@@ -2,11 +2,12 @@ import './App.css';
 import { Routes, Route } from 'react-router-dom'
 import React from 'react'
 import { useState, useEffect } from 'react'
-import House from './components/House'
-import Senate from './components/Senate'
-import Congress from './components/Congress'
-import Rep from './components/Rep';
-import State from './components/State';
+import House from './pages/House'
+import Senate from './pages/Senate'
+import Congress from './pages/Congress'
+import Rep from './pages/Rep';
+import StateHouse from './pages/StateHouse';
+import StateSenate from './pages/StateSenate';
 
 function App() {
  
@@ -17,7 +18,8 @@ function App() {
       <Route exact path='/senate' element={<Senate />} />
       <Route exact path='/house' element={<House />} />
       <Route exact path='/rep/:id' element={<Rep />} />
-      <Route exact path='/state/:id' element={<State />} />
+      <Route exact path='/senate/state/:id' element={<StateSenate />} />
+      <Route exact path='/house/state/:id' element={<StateHouse />} />
     </Routes>
   );
 }

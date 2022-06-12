@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
+import Header from '../components/Header'
 
 
 function Senate() {
@@ -21,19 +22,18 @@ function Senate() {
     
     return (
         <>
-
+            <Header></Header>
             <h1>Senate</h1>
             <div className="senateList">
                 {senate ? senate.map((senator, idx) => {
-                    console.log()
                     return (
                     <div key={idx}>
-                        <Link to={`/state/${senator?.state}`} >
-                            <div>{senator?.state}</div>
+                        <Link to={`/senate/state/${senator?.state}`} >
+                            <h3>{senator?.state}</h3>
                         </Link>
-                        <Link to={`/rep/${senator.id}`} >
+                        {/* <Link to={`/rep/${senator.id}`} >
                             <h3>{senator?.last_name}</h3>
-                        </Link>
+                        </Link> */}
                     </div>
                     )
                     }) : <h2>thinking</h2>}

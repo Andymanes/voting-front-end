@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
+import Header from '../components/Header'
 
 
 function Rep (props) {
@@ -28,6 +29,7 @@ function Rep (props) {
     
     return (
         <>
+            <Header></Header>
             <div></div>
             <div>{JSON.stringify(rep.first_name)}</div>
             <div>{JSON.stringify(rep.last_name)}</div>
