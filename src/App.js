@@ -10,6 +10,8 @@ import StateSenate from './pages/StateSenate';
 import Test from './pages/Test';
 import BigTest from './pages/BigTest';
 import SenateBills from './pages/SenateBills';
+import HouseBills from './pages/HouseBills';
+import OneBill from './pages/OneBill'
 
 function App() {
  
@@ -24,6 +26,8 @@ function App() {
       <Route exact path='/senate/state/:id' element={<StateSenate />} />
       <Route exact path='/house/state/:id' element={<StateHouse />} />
       <Route exact path='/senate/bills' element={<SenateBills />} />
+      <Route exact path='/house/bills' element={<HouseBills />} />
+      <Route exact path='/bill/:id' element={<OneBill />} />
       <Route exact path='/test' element={<Test />} />
       <Route exact path='/bigtest' element={<BigTest />} />
     </Routes>

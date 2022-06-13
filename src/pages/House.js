@@ -26,11 +26,11 @@ function House() {
                 {house ? house.map((houseRep, idx) => {
                     return (
                         <div key={idx}>
-                        <Link to={`/house/state/${houseRep?.state}`} className='stateLink' style={{ textDecoration: 'none', color: 'black' }}>
-                            <h3 className='stateLink'>{houseRep?.state}</h3>
-                        </Link>
+                            <Link to={`/house/state/${houseRep?.state}`} className='stateLink' style={{ textDecoration: 'none', color: 'black' }}>
+                                <h3 className='stateLink'>{houseRep?.state}</h3>
+                            </Link>
                         
-                    </div>
+                        </div>
                     )
                 }) : <h2>thinking</h2>}
             </div>

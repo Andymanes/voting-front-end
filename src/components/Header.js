@@ -18,7 +18,12 @@ function Header() {
                     </div>
                     <div className='navLink'>
                         <div>
-                            <Link to='/senate/bills'>Bills</Link>
+                            <Link to='/senate/bills' style={{ textDecoration: 'none', color: 'white' }}>Senate Bills</Link>
+                        </div>
+                    </div>
+                    <div className='navLink'>
+                        <div>
+                            <Link to='/house/bills' style={{ textDecoration: 'none', color: 'white' }}>House Bills</Link>
                         </div>
                     </div>
                 </div>

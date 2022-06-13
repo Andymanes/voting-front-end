@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react'
 import { Link } from "react-router-dom"
 import Header from '../components/Header'
 
-function SenateBills() {
+function HouseBills() {
   let [bills, getBills] = useState([])
   useEffect(() => {
-    fetch('http://localhost:4000/senate/bills')
+    fetch('http://localhost:4000/house/bills')
       .then(response => {
         console.log('Response:', response)
         return response.json()
@@ -39,4 +39,4 @@ function SenateBills() {
   )
 }
 
-export default SenateBills
+export default HouseBills

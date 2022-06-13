@@ -41,7 +41,7 @@ function Rep (props) {
                 <h3>Votes with party {repRole?.votes_with_party_pct}% of the time</h3>
                 <h2 className='contactInfo'>Contact info:
                     <h5>Phone Number {repRole?.phone}</h5>
-                    <h5><a href='{repRole.contact_form}'>Give feedback</a></h5>
+                    <h5>Office: {repRole?.office}</h5>
                 </h2>
             </div>
         </>
