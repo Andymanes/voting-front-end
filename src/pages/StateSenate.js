@@ -28,7 +28,7 @@ function StateSenate() {
     return (
         <>
             <Header></Header>
-            <h1>Senators</h1>
+            <h1 className="title">Senators</h1>
             <div className="repList">
                 {state ? state.map((state, idx) => {
                     return (

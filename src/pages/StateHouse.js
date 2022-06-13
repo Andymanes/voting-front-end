@@ -38,7 +38,7 @@ function StateHouse() {
                             {/* <h3>{state?.name}</h3> */}
                         {/* </Link> */}
                         <Link to={`/rep/${state.id}`}  style={{ textDecoration: 'none' }}>
-                            <h3 className='repLink'>{state?.name}</h3>
+                            <h3 className='repLink'>{state?.name} ({state?.district})</h3>
                         </Link>
                     </div>
                     )

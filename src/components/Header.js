@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
+import SearchBar from "./SearchBar"
 
 function Header() {
     return (
@@ -16,9 +17,12 @@ function Header() {
                         <Link to='/house' style={{ textDecoration: 'none', color: 'white' }}>House</Link>
                     </div>
                     <div className='navLink'>
-                        <div>bills Link</div>
+                        <div>
+                            <Link to='/senate/bills'>Bills</Link>
+                        </div>
                     </div>
                 </div>
+                {/* <div><SearchBar placeholder='Search for rep'></SearchBar></div> */}
             </div>
         </>
     )
